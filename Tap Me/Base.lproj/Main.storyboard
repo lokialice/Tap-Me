@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Tap_Me" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time: 30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ad9-cy-IhH">
+                                <rect key="frame" x="112" y="39" width="142" height="50"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="142" id="2I8-Mq-pea"/>
+                                    <constraint firstAttribute="height" constant="50" id="AkC-0Q-oC6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Do you wanna tap me?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvA-B3-v9O">
+                                <rect key="frame" x="79" y="97" width="218" height="21"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LfO-Pa-0JJ">
+                                <rect key="frame" x="24" y="172" width="328" height="313"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="313" id="1eB-DS-ZdU"/>
+                                    <constraint firstAttribute="width" constant="328" id="fcN-3g-9cJ"/>
+                                </constraints>
+                                <state key="normal" title="Tap Me!" backgroundImage="gai1.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Ocg-Nh-hme"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lqI-6f-Yai">
+                                <rect key="frame" x="263" y="544" width="89" height="28"/>
+                                <state key="normal" title="Next Girl">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnNextgirl:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="jRl-JZ-s39"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nhy-JU-5f8">
+                                <rect key="frame" x="48" y="493" width="111" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="cj0-sJ-kcF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="40"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.79768805779999996" green="1" blue="0.78184476489999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Nhy-JU-5f8" secondAttribute="bottom" constant="44" id="BQG-z3-xnQ"/>
+                            <constraint firstAttribute="centerX" secondItem="Nhy-JU-5f8" secondAttribute="centerX" constant="84" id="Bks-Of-tib"/>
+                            <constraint firstAttribute="centerX" secondItem="LfO-Pa-0JJ" secondAttribute="centerX" id="OET-Ki-NXH"/>
+                            <constraint firstAttribute="centerX" secondItem="ad9-cy-IhH" secondAttribute="centerX" constant="5" id="nAK-ex-ATO"/>
+                            <constraint firstAttribute="centerY" secondItem="LfO-Pa-0JJ" secondAttribute="centerY" constant="5.5" id="rHk-4Y-x5x"/>
+                            <constraint firstItem="ad9-cy-IhH" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="19" id="tLk-56-wZA"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="btnNextOultet" destination="lqI-6f-Yai" id="EQ3-46-AA5"/>
+                        <outlet property="btnTapOulet" destination="LfO-Pa-0JJ" id="X5c-zX-xnO"/>
+                        <outlet property="scoreLabel" destination="Nhy-JU-5f8" id="CWj-q9-4Pw"/>
+                        <outlet property="timerLabel" destination="ad9-cy-IhH" id="jp4-il-u0D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="393" y="284"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gai1.jpg" width="720" height="960"/>
+    </resources>
+</document>
